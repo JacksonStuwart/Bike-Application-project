@@ -1,0 +1,220 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-----------fonts------------->
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-----------fonts------------->
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-----------linkto stylesheet------------->
+
+    <title>Customer Details</title>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <header>
+
+        <!-- route to customerDetails -->
+        <a href="/customerDetails" class="cd">
+            Customer Details</a>
+
+        <!-- Route to home services about -->
+
+        <a href="/home" id="navH">Home</a>
+        <a href="/services" id="navS">Services</a>
+        <a href="/about" id="navA">About us</a>
+        <a href="/logout" id="logout">Logout</a>
+
+    </header>
+    <h2 id="h2cusbook"><br> Current Booking Status
+    </h2>
+    <%if(xx.length == 0) {%>
+        <h4 id="h4cusbook">There is no Current Booking</h4>
+        <% } else{ %>
+            <% for(var i=0;i<xx.length;i++ ) {%>
+
+                <table>
+                    <tr>
+
+                        <td>Name</td>
+                        <td>
+                            <%= xx[aa[i]].bookedBy%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Order ID</td>
+                        <td>
+                            <%= xx[aa[i]].orderID%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Email ID</td>
+                        <td>
+                            <%= xx[aa[i]].email%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Booking Date</td>
+                        <td>
+                            <%= xx[aa[i]].bookingDate%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Booking Time</td>
+                        <td>
+                            <%= xx[aa[i]].bookingTime%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Service Type</td>
+                        <td>
+                            <%=xx[aa[i]].serviceType%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Vehicle Name</td>
+                        <td>
+                            <%= xx[aa[i]].vehicleName%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Vehicle No</td>
+                        <td>
+                            <%= xx[aa[i]].vehicleNo%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Booking Status</td>
+                        <td>
+                            <%= xx[aa[i]].bookingStatus%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Booked Date</td>
+                        <td>
+                            <%= xx[aa[i]].bookedDate%>
+                        </td>
+                    </tr>
+                    <form action="/cancelBooking" method="post">
+                        <input type="hidden" name="orderid" value=<%=xx[aa[i]].orderID%>>
+                        <input type="hidden" name="useruid" value=<%=xx[aa[i]].userUID%>>
+                        <button id="delete"> Cancel </button>
+                    </form>
+                </table><br>
+
+                <%}%>
+                    <%}%>
+                        <!-- Route To Previous Details -->
+                        <br>
+                        <h2 id="h2cusbook">
+                            Previous Booking Details
+                        </h2>
+                        <%if(Px.length == 0) {%>
+                            <h4 id="h4cusbook">There is no Previous Booking</h4>
+                            <% } else{ %>
+                                <% for(var i=0;i<Px.length;i++ ) {%>
+
+                                    <table>
+                                        <tr>
+
+                                            <td>Name</td>
+                                            <td>
+                                                <%= Px[Pa[i]].bookedBy%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Order ID</td>
+                                            <td>
+                                                <%= Px[Pa[i]].orderID%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Email ID</td>
+                                            <td>
+                                                <%= Px[Pa[i]].email%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Booking Date</td>
+                                            <td>
+                                                <%= Px[Pa[i]].bookingDate%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Booking Time</td>
+                                            <td>
+                                                <%= Px[Pa[i]].bookingTime%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Service Type</td>
+                                            <td>
+                                                <%=Px[Pa[i]].serviceType%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Vehicle Name</td>
+                                            <td>
+                                                <%= Px[Pa[i]].vehicleName%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Vehicle No</td>
+                                            <td>
+                                                <%= Px[Pa[i]].vehicleNo%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Booking Status</td>
+                                            <td>
+                                                <%= Px[Pa[i]].bookingStatus%>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Booked Date</td>
+                                            <td>
+                                                <%= Px[Pa[i]].bookedDate%>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <%}%>
+                                        <%}%>
+
+                                            <!-----------footer section------------->
+
+                                            <footer id=<%=(xx.length||Px.length>0)?"lastfoot":null%>>
+                                                <div id="footerdiv">
+                                                    <h2 class="dialouge3">15 YEARS OF EXPERIENCE</h2>
+                                                    <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+                                                </div>
+                                            </footer>
+
+</body>
+
+</html>

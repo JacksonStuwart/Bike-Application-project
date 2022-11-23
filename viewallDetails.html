@@ -1,0 +1,114 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-----------fonts------------->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-----------fonts------------->
+
+    <link rel="stylesheet" href="css/register.css">
+    <!-----------linkto stylesheet------------->
+
+
+
+    <title>View-Customer</title>
+
+</head>
+
+<body>
+
+    <!-- header section -->
+
+    <header>
+
+        <h2 class="dialouge1"> JOHN'S SERVICE STATION</h2>
+        <h6 class="dialouge2">
+            A HOSPITAL WERE BIKES GET TREATMENT
+        </h6>
+        <a href="/logout" id="logout">Logout</a>
+
+    </header>
+
+    <h2 id="h2cusbook"><br> Customer Details
+    </h2> <input type="text" id="search" onkeyup="search()" placeholder="Search  USER" />
+
+    <%if(aa.length == 0) {%>
+        <h4 id="h4cusbook">There is no Records ...</h4>
+        <% } else{ %>
+            <h3 id="Totalcus">Total Customers :
+                <%=aa.length%>
+            </h3>
+            <% for(var i=0;i<aa.length;i++ ) {%>
+
+                <div id="card" class="card" style=<%=(aa.length-i==1)? "margin-bottom:10rem":null%>>
+                    <div id="cusdetailDiv">
+                        <h5 id="cusDetails2">
+                            Completed Orders :
+                            <%=completedOrder[i]%>
+                        </h5>
+                        <h5 id="cusDetails2">
+                            Pending Orders :
+                            <%=pendingOrder[i]%>
+                        </h5>
+                        <h5 id="cusDetails2">
+                            Total Orders :
+                            <%=pendingOrder[i]+completedOrder[i]%>
+                        </h5>
+                    </div>
+                    <h5 id="cusDetails1">
+                        Name :
+                        <%=name[i]%>
+                    </h5>
+                    <h5 id="cusDetails1">
+                        E-Mail :
+                        <%=email[i]%>
+                    </h5>
+                    <h5 id="cusDetails1">
+                        Phone Number :
+                        <%=ph[i]%>
+                    </h5>
+                    <h5 id="cusDetails1">
+                        Address :
+                        <%=ad[i]%>
+                    </h5>
+                    <h6 id="cusuid">
+                        UID :
+                        <%=aa[i]%>
+                    </h6>
+                </div>
+                <%}%>
+                    <%}%>
+                        <!-----------footer section------------->
+                        <footer id="lastfooter">
+                            <div id="footerdiv">
+                                <h2 class="dialouge3">15 YEARS OF EXPERIENCE</h2>
+                                <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+                            </div>
+                        </footer>
+
+</body>
+<script>
+    function search() {
+        var value = document.getElementById("search").value;
+        var card = document.querySelectorAll(".card");
+        var uid, name, email, number, searchString;
+        for (var i = 0; i < card.length; i++) {
+            uid = card[i].getElementsByTagName("h6")[0].innerText;
+            name = card[i].getElementsByTagName("h5")[3].innerText;
+            email = card[i].getElementsByTagName("h5")[4].innerText;
+            number = card[i].getElementsByTagName("h5")[5].innerText;
+            searchString = uid + name + email + number;
+            if (searchString) {
+                if (searchString.indexOf(value) > -1) {
+                    card[i].style.display = "";
+                } else {
+                    card[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</html>

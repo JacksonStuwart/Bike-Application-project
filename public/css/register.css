@@ -1,0 +1,785 @@
+.register {
+    text-align: center;
+    width: 16rem;
+    height: 2.5rem;
+    background-color: rgb(211, 229, 243);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: .6rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#register {
+    border: 12px solid rgb(166, 227, 255);
+    border-radius: 12px;
+    text-align: center;
+    width: 27%;
+    height: 60%;
+    margin-top: 3rem;
+    margin-left: 35%;
+}
+
+#haveAcc {
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: -6rem;
+}
+
+#forgot {
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -4rem;
+}
+
+#notAcc {
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: -7.5rem;
+}
+
+#notACC:hover,
+#forgot:hover,
+#haveAcc:hover {
+    color: red;
+}
+
+#sl {
+    width: 80%;
+    margin-left: 2.4rem;
+    margin-bottom: 1rem;
+    ;
+}
+
+#insidelogin {
+    margin-top: 2rem;
+}
+
+#insidesignup {
+    margin-top: 2rem;
+}
+
+.button {
+    border-radius: .5rem;
+    width: 8rem;
+    height: 2.1rem;
+    border: none;
+    letter-spacing: 3px;
+    margin: 1rem;
+    padding: auto;
+    color: blanchedalmond;
+    letter-spacing: 1px;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.imghome {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    letter-spacing: 1px;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+input {
+    letter-spacing: 1px;
+}
+
+a {
+    text-align: justify;
+    text-decoration: none;
+}
+
+body {
+    font-family: verdana;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: rgb(45, 131, 182);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+footer {
+    background-color: rgb(45, 131, 182);
+    width: 100%;
+    height: 7.6rem;
+    margin-top: 4rem;
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+#lastfoot {
+    position: relative;
+}
+
+#lastfooter {
+    position: fixed;
+}
+
+header h2 {
+    position: absolute;
+    margin-top: 20px;
+    left: 20%;
+}
+
+header {
+    height: 10vh;
+}
+
+footer h2 {
+    Left: 36%;
+    text-align: justify;
+    margin: 0;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+}
+
+#navA {
+    position: absolute;
+    color: rgb(244, 103, 103);
+    width: 7rem;
+    letter-spacing: 1px;
+    height: 1.6rem;
+    text-align: center;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+    margin-left: 64%;
+    padding-top: 7px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#navH {
+    position: absolute;
+    color: rgb(244, 103, 103);
+    width: 7rem;
+    letter-spacing: 1px;
+    height: 1.6rem;
+    text-align: center;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+    padding-top: 7px;
+    font-weight: bold;
+    margin-left: 46%;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#navS {
+    position: absolute;
+    color: rgb(244, 103, 103);
+    width: 7rem;
+    letter-spacing: 1px;
+    height: 1.6rem;
+    text-align: center;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+    padding-top: 7px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 55%;
+}
+
+#navA:hover,
+#navH:hover,
+#navS:hover {
+    background-color: rgb(190, 162, 185);
+    letter-spacing: 3px;
+    color: rgb(10, 10, 10);
+}
+
+#PreviousBooking {
+    margin-bottom: 5rem;
+}
+
+.cd {
+    color: rgb(244, 103, 103);
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    background-color: aliceblue;
+    outline: none;
+    font-weight: bold;
+    padding: .5rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    font-size: large;
+}
+
+.cd:hover {
+    letter-spacing: 2px;
+    color: rgb(12, 11, 11);
+    background-color: rgb(190, 162, 185);
+}
+
+.dialouge1 {
+    color: rgb(214, 200, 200);
+}
+
+.dialouge2 {
+    color: rgba(118, 212, 197, 0.836);
+    position: absolute;
+    margin-left: 45rem;
+    font-size: large;
+    margin-right: 20rem;
+    margin-top: 1rem;
+}
+
+.dialouge3 {
+    color: rgb(228, 157, 157);
+    position: absolute;
+}
+
+#footerdiv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dialouge4 {
+    position: absolute;
+}
+
+footer p {
+    position: absolute;
+    Left: 40%;
+    margin: 0;
+    text-align: justify;
+    bottom: 25px;
+    color: rgb(199, 169, 115);
+    font-size: large;
+}
+
+#logout {
+    float: right;
+    margin-right: 7rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+    width: 7rem;
+    font-family: 'Courier New', Courier, monospace;
+    height: 1.7rem;
+    letter-spacing: 1.5px;
+    background-color: rgb(153, 87, 155);
+    color: rgb(213, 243, 243);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#logout:hover {
+    background-color: rgb(199, 235, 240);
+    color: black;
+    letter-spacing: 3px;
+}
+
+.button:hover {
+    background-color: rgb(199, 235, 240);
+    letter-spacing: 3px;
+    color: black;
+}
+
+#shapediv1 {
+    margin-top: 17rem;
+    margin-left: 8rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 41rem;
+    border-radius: 1rem;
+    height: 10rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(187, 164, 150);
+    position: absolute;
+}
+
+#card {
+    margin-top: 3rem;
+    margin-left: 29%;
+    width: 38rem;
+    border-radius: 1rem;
+    height: 10.5rem;
+    color: rgb(201, 169, 99);
+    background-color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+#search {
+    width: 18rem;
+    height: 2.2rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    border-width: 0 0 3px 0;
+    border-bottom-color: black;
+    outline: none;
+    margin-left: 70rem;
+    font-size: 15;
+    border-radius: 5px;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+}
+
+#search:hover {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15;
+    color: rgb(227, 192, 54);
+    font-weight: bold;
+}
+
+#cusDetails1 {
+    position: relative;
+    padding: .7rem 1rem;
+    align-items: flex-end;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#cusuid {
+    position: absolute;
+    margin-top: -4rem;
+    margin-left: 21rem;
+    font-size: x-small;
+}
+
+#cusdetailDiv {
+    position: absolute;
+    margin-left: 24rem;
+    padding: .5rem;
+}
+
+#cusDetails2 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+}
+
+#shapediv2 {
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    border-radius: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    width: 41rem;
+    height: 10rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 209, 211);
+}
+
+#shapediv3 {
+    position: absolute;
+    width: 12rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: blanchedalmond;
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: 52%;
+    margin-top: 5rem;
+    height: 22rem;
+    color: black;
+    background-color: rgb(242, 246, 139)
+}
+
+#shapediv1:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+#shapediv2:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+#shapediv3:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.nava:hover {
+    background-color: pink;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.vl {
+    border-right: 6px solid green;
+    height: 9rem;
+    margin-left: 11rem;
+    margin-top: -1rem;
+    position: absolute;
+}
+
+#pforgot {
+    padding: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1.5rem;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+#reset {
+    margin-top: 1.5rem;
+}
+
+#img1,
+#img2 {
+    height: 125px;
+    float: left;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    width: 150px;
+}
+
+#img3 {
+    rotate: 180;
+    width: 155px;
+    height: 100px;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.BookingDiv {
+    width: 24rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: aquamarine;
+    margin-left: 67rem;
+    position: absolute;
+}
+
+.bookDetails {
+    padding: 1px;
+    text-align: left;
+    width: 35rem;
+    margin-left: 10rem;
+    margin-right: 0;
+    margin-top: .5rem;
+}
+
+.bookDetailsh2 {
+    margin: 1rem;
+}
+
+.modalbut {
+    padding: 2px;
+    width: 12rem;
+    letter-spacing: 1px;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    height: 3rem;
+    margin-left: 42%;
+    margin-top: 6rem;
+    background-color: cadetblue;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#bookbut {
+    border: none;
+    outline: none;
+    width: 8rem;
+    height: 2rem;
+    font-weight: bold;
+    margin-left: 33%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+    background-color: rgb(249, 242, 249);
+}
+
+#bookbut:hover {
+    font-weight: bold;
+    color: rgb(223, 235, 245);
+    background-color: black;
+}
+
+.modalbut:hover {
+    background-color: rgb(49, 172, 209);
+    color: black;
+    letter-spacing: 3px;
+}
+
+.inputpopup {
+    margin-left: 1rem;
+    padding: .5rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 20rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.inputpopup:hover {
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.inputpopupR {
+    position: relative;
+    width: 2.5rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+}
+
+#h5timming {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+#h4cusbook {
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+#h2cusbook {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(95, 57, 106);
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.bookDetails6 {
+    width: 11rem;
+    margin: .8rem;
+    letter-spacing: 1px;
+}
+
+.inputpopup7,
+.inputpopup5,
+.inputpopup6 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#editdiv {
+    position: absolute;
+    width: 60%;
+    height: 5rem;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 2rem 0 0 18rem;
+    background-color: blanchedalmond;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    font-size: large;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+}
+
+#Totalcus {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    margin: 1rem 0 0 6rem;
+    letter-spacing: 1px;
+}
+
+#viewDetailsdiv {
+    position: absolute;
+    width: 60%;
+    height: 5rem;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin: 13rem 0rem 2rem 18rem;
+    background-color: blanchedalmond;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    font-size: large;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+}
+
+#editdiv:hover,
+#viewDetailsdiv:hover {
+    background-color: black;
+    font-size: larger;
+    color: blanchedalmond;
+}
+
+#ownerh2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(240, 194, 125);
+}
+
+.ownlogout {
+    margin-top: 1.5rem;
+    margin-left: 86%;
+    height: 2.5rem;
+    width: 14rem;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+table {
+    margin-left: 27%;
+    margin-top: 2rem;
+}
+
+td {
+    padding: 1rem;
+    background-color: rgb(34, 77, 103);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(164, 178, 191);
+    width: 20rem;
+    text-align: justify;
+}
+
+#previousbooking,
+#completedBooking {
+    background-color: cadetblue;
+    margin-left: 36%;
+    padding: 1.5rem;
+    margin-top: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+#delete {
+    padding: 10px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    width: 8rem;
+    border: none;
+    outline: none;
+    color: rgb(194, 182, 182);
+    background-color: rgb(52, 103, 92);
+    margin-left: 80%;
+    font-weight: bold;
+    margin-top: 22rem;
+    margin-right: 1rem;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+}
+
+#edit {
+    padding: 10px;
+    letter-spacing: 2px;
+    margin-left: 5rem;
+    border-radius: 5px;
+    width: 8rem;
+    color: rgb(194, 182, 182);
+    font-weight: bold;
+    border: none;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    background-color: rgb(52, 103, 92);
+    margin-top: 22rem;
+    position: absolute;
+}
+
+#edit:hover,
+#delete:hover {
+    background-color: rgb(235, 57, 57);
+    letter-spacing: 5px;
+    color: rgb(249, 243, 243);
+}
+
+#inputedit {
+    height: 2.5rem;
+    width: 10rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    margin-top: 22.6rem;
+    font-size: larger;
+    color: rgb(67, 86, 102);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 13rem;
+}
+
+#orderNo {
+    color: rgb(27, 72, 93);
+    margin-left: 22rem;
+    margin-top: 1.2rem;
+    position: absolute;
+}
+
+#inputupdate {
+    width: 2rem;
+    margin-left: 1rem;
+    height: 1rem;
+}
+
+#aboutus {
+    margin-top: 4rem;
+    width: 80%;
+    margin-left: 12%;
+    letter-spacing: 5px;
+    font-size: large;
+    padding: 2rem;
+    text-align: justify;
+}
+
+#service {
+    position: absolute;
+    margin-top: 4rem;
+    width: 50%;
+    margin-left: 40%;
+    letter-spacing: 5px;
+    font-size: large;
+    padding: 2rem;
+    text-align: justify;
+}
+
+#imgservice {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}

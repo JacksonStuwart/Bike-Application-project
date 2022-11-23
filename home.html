@@ -1,0 +1,93 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Link to google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-- Link to stylesheet -->
+
+    <link rel="stylesheet" href="css/register.css">
+
+
+    <title>Customer</title>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <!-- Route to customerDetails -->
+
+        <a href="/customerDetails" class="cd">Customer Details</a>
+
+        <!-- Route to home services about -->
+
+        <a href="/home" id="navH">Home</a>
+        <a href="/services" id="navS">Services</a>
+        <a href="/about" id="navA">About us</a>
+        <a href="/logout" id="logout">Logout</a>
+
+    </header>
+
+    <!-- Three main div with their Services Details -->
+
+    <div id="shapediv1">
+        <img src="img/bike-service.jpg" alt="img" id="img1">
+        <h3 class="bookDetailsh2"><u>General Servie check up</u></h3>
+        <h5 class="bookDetails">Duration : 1 - 2 Days, Generally depends on Vehicle </h5>
+        <h5 class="bookDetails">Cost :1000 - 5000 Rs, Generally depends on Vehicle's condition </h5>
+
+    </div>
+    <div id="shapediv2">
+        <img src="img/washing-black-motorcycle.jpg" id="img2" alt="img">
+        <h3 class="bookDetailsh2"><u>Water Wash</u></h3>
+        <h5 class="bookDetails">Duration : 45 mins Approx, Maximum 1 Hour </h5>
+        <h5 class="bookDetails">Cost :200 - 300 Rs, Generally depends on Vehicle's condition </h5>
+    </div>
+
+    <div id="shapediv3">
+        <h3> <u>Oil Change</u></h3>
+        <img src="img/2-wheeler-engine-oil.jpeg" alt="img" id="img3">
+        <h5 class="bookDetails6">Duration : 1 Hour Approx</h5>
+        <h5 class="bookDetails6">Cost :1000 - 1600 Rs </h5>
+        <h5 class="bookDetails6">The best Engine Oils are available here</h5>
+    </div>
+
+    <div class="BookingDiv">
+
+        <!-- Route to post booking Details -->
+        <h4 id="h5timming"><u>Book your Vehicle </u></h5><br>
+            <form action="/bookingDetails" method="post">
+                <input type="text" class="inputpopup" name="name" autocomplete="off" maxlength="20" placeholder="Enter Name"></input>
+                <input type="text" class="inputpopup" name="bookingDate" autocomplete="off" maxlength="15" placeholder="Day/Mon/Year"></input>
+                <input type="text" class="inputpopup" name="vehicleName" maxlength="20" autocomplete="off" placeholder="Ex : RE classic "></input>
+                <input type="text" class="inputpopup" name="vehicleNo" maxlength="25" autocomplete="off" placeholder="EX : TN:45:4665"></input>
+                <input type="text" class="inputpopup" name="bookingTime" maxlength="15" autocomplete="off" placeholder="Ex : 10 : 00 AM"></input>
+                <input type="radio" class="inputpopupR" name="service" value="water wash">Water Wash</input><br>
+                <input type="radio" class="inputpopupR" name="service" value="oil change">Oil Change</input><br>
+                <input type="radio" class="inputpopupR" name="service" value="General service">General Service</input><br>
+                <button type="submit" id="bookbut"> Submit</button>
+            </form>
+
+            <h5 id="h5timming">Opening Time 10 AM - 6 PM <br> Generally shop closes at Weekends</h5>
+    </div>
+
+    <!-- Footer section -->
+
+    <footer>
+
+        <h2 class="dialouge3">15 YEARS OF EXPERIENCE</h2>
+
+        <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+
+    </footer>
+</body>
+
+</html>

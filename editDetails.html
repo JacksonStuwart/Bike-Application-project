@@ -1,0 +1,240 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Link to Google Font -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-- link to stylesheet -->
+
+    <link rel="stylesheet" href="css/register.css">
+
+    <title>Edit Details</title>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <h2 class="dialouge1"> JOHN'S SERVICE STATION</h2>
+        <h6 class="dialouge2">
+            A HOSPITAL WERE BIKES GET TREATMENT
+        </h6>
+
+        <!-- Logout function -->
+
+        <a href="/logout" id="logout">Logout</a>
+
+    </header><br>
+    <h2 id="h2cusbook">
+        Status Of Vehicle
+    </h2>
+    <%if(xx.length == 0) {%>
+        <h4 id="h4cusbook">There is no Pending Orders ...</h4>
+        <% } else{ %>
+            <% for(var i=0;i<xx.length;i++ ) {%>
+                <h4 id="orderNo">
+                    <%=i+1%>)
+                </h4>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <%= xx[aa[i]].bookedBy%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+
+                            <td> UID</td>
+                            <td>
+                                <%= xx[aa[i]].userUID%>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Order ID</td>
+                            <td>
+                                <%= xx[aa[i]].orderID%>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Email-ID</td>
+                            <td>
+                                <%= xx[aa[i]].email%>
+                            </td>
+                        </tr>
+
+                        <td>Booking Date</td>
+                        <td>
+                            <%= xx[aa[i]].bookingDate%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Booking Time</td>
+                        <td>
+                            <%= xx[aa[i]].bookingTime%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Service Type</td>
+                        <td>
+                            <%=xx[aa[i]].serviceType%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Vehicle Name</td>
+                        <td>
+                            <%= xx[aa[i]].vehicleName%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Vehicle No</td>
+                        <td>
+                            <%= xx[aa[i]].vehicleNo%>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>Booking Status</td>
+                        <td>
+                            <%= xx[aa[i]].bookingStatus%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Booked Date</td>
+                        <td>
+                            <%= xx[aa[i]].bookedDate%>
+                        </td>
+                    </tr>
+                    <!-- Route to  DELETE FIREbase Value  -->
+
+                    <form action="/deleteFirebase" method="post">
+                        <input type="hidden" name="editValue" value=<%=xx[aa[i]].orderID%>></input>
+                        <input type="hidden" name="uid" value=<%=xx[aa[i]].userUID%>></input>
+                        <button id="delete">Delete</button>
+                    </form>
+
+                    <!-- Route to  EDIT FIREbase Value  -->
+
+                    <form action="/editFirebase" method="post">
+                        <label id="inputedit">
+                           <input id="inputupdate" type="checkbox" name="status" value="completed">Completed</input>
+                            </label>
+                        <input type="hidden" name="editValue" value=<%=xx[aa[i]].orderID%>></input>
+                        <input type="hidden" name="uid" value=<%=xx[aa[i]].userUID%>></input>
+                        <button id="edit">Update</button></form>
+                </table>
+                <%}%>
+                    <%}%>
+                        <h2 id="h2cusbook"><br> Completed service Details
+                        </h2>
+                        <%if(Px.length == 0) {%>
+                            <h4 id="h4cusbook">There is no Records ...</h4>
+                            <% } else{ %>
+                                <% for(var i=0;i<Px.length;i++ ) {%>
+                                    <div>
+                                        <h4 id="orderNo">
+                                            <%=i+1%>)
+                                        </h4>
+                                        <table>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>
+                                                    <%= Px[Pa[i]].bookedBy%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+
+                                                <td> UID</td>
+                                                <td>
+                                                    <%= Px[Pa[i]].userUID%>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <tr>
+                                                    <td>Order ID</td>
+                                                    <td>
+                                                        <%= Px[Pa[i]].orderID%>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Email-ID</td>
+                                                    <td>
+                                                        <%= Px[Pa[i]].email%>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <tr>
+
+                                                        <td>Booking Date</td>
+                                                        <td>
+                                                            <%= Px[Pa[i]].bookingDate%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Booking Time</td>
+                                                        <td>
+                                                            <%= Px[Pa[i]].bookingTime%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Service Type</td>
+                                                        <td>
+                                                            <%=Px[Pa[i]].serviceType%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Vehicle Name</td>
+                                                        <td>
+                                                            <%= Px[Pa[i]].vehicleName%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Vehicle No</td>
+                                                        <td>
+                                                            <%= Px[Pa[i]].vehicleNo%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td>Booking Status</td>
+                                                        <td>
+                                                            <%= Px[Pa[i]].bookingStatus%>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Booked Date</td>
+                                                        <td>
+                                                            <%= Px[Pa[i]].bookedDate%>
+                                                        </td>
+                                                    </tr>
+                                        </table>
+                                    </div>
+                                    <%}%>
+                                        <%}%>
+
+                                            <footer id=<%=(xx.length||Px.length>0)?"lastfoot":null%>>
+                                                <div id="footerdiv">
+                                                    <h2 class="dialouge3">15 YEARS OF EXPERIENCE</h2>
+                                                    <p class="dialouge4">A GENUNE SERVICE PROVIDER</p>
+                                                </div>
+                                            </footer>
+
+</body>
+
+</html>
